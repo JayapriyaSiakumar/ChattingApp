@@ -1,0 +1,14 @@
+.chat-list { flex: 1; overflow-y: auto; }
+.chat-list-empty { padding: 2rem 1rem; text-align: center; color: #64748b; font-size: .875rem; }
+.chat-list-item { display: flex; align-items: center; gap: .75rem; padding: .875rem 1rem;
+  cursor: pointer; transition: background .15s; border-bottom: 1px solid #0f172a; }
+.chat-list-item:hover, .chat-list-item.active { background: #0f172a; }
+.chat-avatar-wrap { position: relative; flex-shrink: 0; }
+.online-dot { position: absolute; bottom: 1px; right: 1px; width: 10px; height: 10px;
+  background: #22c55e; border-radius: 50%; border: 2px solid #1e293b; }
+.chat-info { flex: 1; min-width: 0; }
+.chat-info-top { display: flex; justify-content: space-between; align-items: baseline; }
+.chat-name { font-weight: 600; font-size: .9rem; color: #e2e8f0; }
+.chat-time { font-size: .7rem; color: #64748b; white-space: nowrap; }
+.chat-preview { font-size: .8rem; color: #94a3b8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: .15rem; }
+.group-badge { margin-right: .25rem; }

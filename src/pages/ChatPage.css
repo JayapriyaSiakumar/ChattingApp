@@ -1,0 +1,8 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0f172a; color: #e2e8f0; font-family: 'Segoe UI', sans-serif; }
+.chat-page { display: flex; height: 100vh; overflow: hidden; }
+.chat-main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.chat-empty { display: flex; flex-direction: column; align-items: center; justify-content: center;
+  height: 100%; gap: 1rem; color: #64748b; }
+.chat-empty span { font-size: 4rem; }
+.chat-empty p { font-size: 1.1rem; }

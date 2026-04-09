@@ -1,0 +1,31 @@
+.sidebar { width: 320px; min-width: 280px; background: #1e293b; border-right: 1px solid #334155;
+  display: flex; flex-direction: column; overflow: hidden; }
+.sidebar-header { display: flex; align-items: center; gap: .75rem; padding: 1rem;
+  border-bottom: 1px solid #334155; }
+.sidebar-username { flex: 1; font-weight: 600; font-size: .95rem; color: #e2e8f0; }
+.logout-btn { background: none; border: none; color: #64748b; font-size: 1.2rem; cursor: pointer; padding: .25rem; }
+.logout-btn:hover { color: #ef4444; }
+.sidebar-search { padding: .75rem; }
+.sidebar-search input { width: 100%; padding: .6rem 1rem; background: #0f172a; border: 1px solid #334155;
+  border-radius: 8px; color: #e2e8f0; outline: none; font-size: .9rem; }
+.sidebar-actions { padding: 0 .75rem .5rem; }
+.group-btn { width: 100%; padding: .5rem; background: #0ea5e9; color: white; border: none;
+  border-radius: 8px; cursor: pointer; font-size: .875rem; font-weight: 600; }
+.search-results { margin: 0 .75rem; background: #0f172a; border: 1px solid #334155; border-radius: 8px; overflow: hidden; }
+.search-result-item { display: flex; align-items: center; gap: .75rem; padding: .75rem;
+  cursor: pointer; transition: background .15s; }
+.search-result-item:hover { background: #1e293b; }
+.result-name { font-size: .9rem; font-weight: 500; }
+.result-email { font-size: .75rem; color: #64748b; }
+.group-creator { padding: .75rem; display: flex; flex-direction: column; gap: .5rem;
+  border-bottom: 1px solid #334155; }
+.group-creator input { padding: .5rem .75rem; background: #0f172a; border: 1px solid #334155;
+  border-radius: 6px; color: #e2e8f0; outline: none; font-size: .875rem; }
+.selected-members { display: flex; flex-wrap: wrap; gap: .25rem; }
+.member-tag { display: flex; align-items: center; gap: .25rem; background: #0ea5e9;
+  color: white; padding: .2rem .5rem; border-radius: 99px; font-size: .75rem; }
+.member-tag button { background: none; border: none; color: white; cursor: pointer; line-height: 1; }
+.create-group-btn { padding: .5rem; background: #10b981; color: white; border: none;
+  border-radius: 6px; cursor: pointer; font-weight: 600; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+.avatar-sm { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; }
