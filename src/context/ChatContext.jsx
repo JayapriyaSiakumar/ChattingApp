@@ -26,7 +26,7 @@ export const ChatProvider = ({ children }) => {
   useEffect(() => {
     if (!user) return;
     const token = localStorage.getItem("token");
-    const socket = io("http://localhost:3000", {
+    const socket = io("https://chatingapp-backend-5iaz.onrender.com", {
       auth: { token },
       withCredentials: true,
     });
