@@ -13,6 +13,7 @@ export default function ChatPage() {
   useEffect(() => {
     fetchChats();
     requestBrowserPermission();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fetchChats]);
 
   return (
@@ -25,7 +26,7 @@ export default function ChatPage() {
         {/* Mobile menu */}
         <button
           onClick={() => setIsOpen(true)}
-          className="md:hidden absolute top-4 left-4 z-20 bg-slate-800 p-2 rounded-lg">
+          className="md:hidden absolute top-3 left-4 z-20 bg-slate-300 p-2 rounded-lg text-xl">
           ☰
         </button>
 
