@@ -28,12 +28,8 @@ export default function ChatBox() {
     <div className="flex flex-col h-full">
 
       {/* Header */}
-      <div className="flex items-center gap-3 px-3 sm:px-5 py-3 bg-slate-900 border-b border-slate-800">
-        <img
-          src={getChatAvatar()}
-          alt={getChatName()}
-          className="w-9 h-9 sm:w-10 sm:h-10 rounded-full"
-        />
+      <div className="flex items-end justify-end w-full gap-3 px-3 sm:px-5 py-3 bg-slate-900 border-b border-slate-800">
+        
         <div className="min-w-0">
           <p className="font-semibold text-slate-100 text-sm truncate">
             {getChatName()}
@@ -44,6 +40,11 @@ export default function ChatBox() {
             </p>
           )}
         </div>
+        <img
+          src={getChatAvatar()}
+          alt={getChatName()}
+          className="w-9 h-9 sm:w-10 sm:h-10 rounded-full"
+        />
       </div>
 
       {/* Messages */}

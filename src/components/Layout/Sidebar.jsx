@@ -102,7 +102,7 @@ export default function Sidebar({ isOpen = true, setIsOpen = () => {} }) {
           <button
             onClick={logout}
             className="p-2 text-slate-500 hover:text-red-400">
-            ⏻
+            ➜]
           </button>
         </div>
 

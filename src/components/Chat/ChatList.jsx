@@ -34,7 +34,7 @@ export default function ChatList() {
             className={`flex items-center gap-3 w-full px-4 py-3 border-b border-slate-800/50 transition-colors text-left ${
               isActive ? "bg-sky-500/10 border-l-2 border-l-sky-500" : "hover:bg-slate-800/50"
             }`}>
-            <div className="relative flex-shrink-0">
+            <div className="relative shrink-0">
               <img src={getChatAvatar(chat)} alt={getChatName(chat)}
                 className="w-11 h-11 rounded-full object-cover" />
               {!chat.isGroupChat && isOnline && (
@@ -50,7 +50,7 @@ export default function ChatList() {
                   {getChatName(chat)}
                 </span>
                 {chat.lastMessage && (
-                  <span className="text-xs text-slate-600 whitespace-nowrap flex-shrink-0">
+                  <span className="text-xs text-slate-600 whitespace-nowrap shrink-0">
                     {formatDistanceToNow(new Date(chat.lastMessage.createdAt), { addSuffix: true })}
                   </span>
                 )}
