@@ -26,10 +26,8 @@ export default function ChatBox() {
 
   return (
     <div className="flex flex-col h-full">
-
       {/* Header */}
-      <div className="flex items-end justify-end w-full gap-3 px-3 sm:px-5 py-3 bg-slate-900 border-b border-slate-800">
-        
+      <div className="flex items-center justify-end w-full gap-3 px-3 sm:px-5 py-3 bg-slate-900 border-b border-slate-800">
         <div className="min-w-0">
           <p className="font-semibold text-slate-100 text-sm truncate">
             {getChatName()}
@@ -51,9 +49,7 @@ export default function ChatBox() {
       <div className="flex-1 overflow-y-auto px-2 sm:px-4 py-3 flex flex-col gap-1 bg-slate-950">
         {messages.length === 0 && (
           <div className="flex-1 flex items-center justify-center">
-            <p className="text-slate-600 text-sm">
-              No messages yet
-            </p>
+            <p className="text-slate-600 text-sm">No messages yet</p>
           </div>
         )}
 
