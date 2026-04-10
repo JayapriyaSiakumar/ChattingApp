@@ -6,13 +6,13 @@ export default function AuthPage() {
   const [mode, setMode] = useState("login");
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-950 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-slate-950 px-4 sm:px-6">
+      {" "}
       {/* Background glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -left-40 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl" />
         <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl" />
       </div>
-
       <div className="relative w-full max-w-md">
         {/* Logo */}
         <div className="text-center mb-8">
@@ -20,7 +20,9 @@ export default function AuthPage() {
             <span className="text-3xl">💬</span>
           </div>
           <h1 className="text-2xl font-bold text-white">ChatApp</h1>
-          <p className="text-slate-400 text-sm mt-1">Connect and chat in real time</p>
+          <p className="text-slate-400 text-sm mt-1">
+            Connect and chat in real time
+          </p>
         </div>
 
         {/* Card */}
@@ -33,8 +35,7 @@ export default function AuthPage() {
                 mode === "login"
                   ? "bg-sky-500 text-white shadow-lg shadow-sky-500/25"
                   : "text-slate-400 hover:text-slate-200"
-              }`}
-            >
+              }`}>
               Sign In
             </button>
             <button
@@ -43,8 +44,7 @@ export default function AuthPage() {
                 mode === "register"
                   ? "bg-sky-500 text-white shadow-lg shadow-sky-500/25"
                   : "text-slate-400 hover:text-slate-200"
-              }`}
-            >
+              }`}>
               Sign Up
             </button>
           </div>

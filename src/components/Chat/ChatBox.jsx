@@ -26,15 +26,16 @@ export default function ChatBox() {
 
   return (
     <div className="flex flex-col h-full">
+
       {/* Header */}
-      <div className="flex items-center gap-3 px-5 py-3.5 bg-slate-900 border-b border-slate-800 shadow-sm">
+      <div className="flex items-center gap-3 px-3 sm:px-5 py-3 bg-slate-900 border-b border-slate-800">
         <img
           src={getChatAvatar()}
           alt={getChatName()}
-          className="w-10 h-10 rounded-full object-cover"
+          className="w-9 h-9 sm:w-10 sm:h-10 rounded-full"
         />
-        <div>
-          <p className="font-semibold text-slate-100 text-sm">
+        <div className="min-w-0">
+          <p className="font-semibold text-slate-100 text-sm truncate">
             {getChatName()}
           </p>
           {activeChat.isGroupChat && (
@@ -46,14 +47,15 @@ export default function ChatBox() {
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto px-4 py-4 flex flex-col gap-1 bg-slate-950">
+      <div className="flex-1 overflow-y-auto px-2 sm:px-4 py-3 flex flex-col gap-1 bg-slate-950">
         {messages.length === 0 && (
           <div className="flex-1 flex items-center justify-center">
             <p className="text-slate-600 text-sm">
-              No messages yet. Say hello! 👋
+              No messages yet
             </p>
           </div>
         )}
+
         {messages.map((msg, i) => (
           <MessageItem
             key={msg._id || i}
@@ -65,9 +67,11 @@ export default function ChatBox() {
             }
           />
         ))}
+
         {typingUsers[activeChat._id] && (
           <TypingIndicator user={typingUsers[activeChat._id]} />
         )}
+
         <div ref={bottomRef} />
       </div>
 

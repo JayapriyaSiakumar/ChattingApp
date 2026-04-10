@@ -21,8 +21,7 @@ export default function NotificationPanel({ onClose }) {
   };
 
   return (
-    <div className="absolute -left-50 top-12 w-70 max-h-120 bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl shadow-black/50 flex flex-col overflow-hidden z-150">
-      {/* Header */}
+<div className="absolute right-0 top-12 w-72 sm:w-80 max-h-[70vh] bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl flex flex-col overflow-hidden z-50">      {/* Header */}
       <div className="flex items-center justify-between px-1 py-3 border-b border-slate-800">
         <h3 className="font-semibold text-slate-100 text-sm">Notifications</h3>
         <div className="flex items-center gap-2">
